@@ -7,6 +7,7 @@ let volume = 0;
 
 for (let i = 0; i <= countOfBalls; i++) {
   volume = (Math.PI * diameter ** 3) / 6;
+  volume += thickness;
 }
 
-console.log(volume);
+console.log(`The volume of ${countOfBalls} balls is ${volume / 1000} liters`);
