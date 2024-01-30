@@ -1,13 +1,16 @@
 'use strict';
 
-let countOfBalls = 12;
-let diameter = 50;
-let thickness = 0.1;
-let volume = 0;
+const COUNTOFBALLS = 12;
+const DIAMETER = 0.5;
+const THICKNESS = 0.01;
+let volumeOfSmallestBall = 0;
+let commonVolume = 0;
+let result = 0;
 
-for (let i = 0; i <= countOfBalls; i++) {
-  volume = (Math.PI * diameter ** 3) / 6;
-  volume += thickness;
+volumeOfSmallestBall = (Math.PI * DIAMETER ** 3) / 6;
+
+for (let i = 1; i <= COUNTOFBALLS; i++) {
+  result = volumeOfSmallestBall + THICKNESS;
+  commonVolume += result;
+  console.log(`The volume of ${i} ball(s) with thickness is ${commonVolume} meters^3`)
 }
-
-console.log(`The volume of ${countOfBalls} balls is ${volume / 1000} liters`);
