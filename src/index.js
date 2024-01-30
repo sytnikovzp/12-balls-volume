@@ -6,11 +6,13 @@ const THICKNESS = 0.01;
 let volumeOfSmallestBall = 0;
 let commonVolume = 0;
 let currentVolume = 0;
+let currentDiameter = 0;
 
 volumeOfSmallestBall = (Math.PI * DIAMETER ** 3) / 6;
 
 for (let i = 1; i <= COUNT_OF_BALLS; i++) {
-  currentVolume = Math.PI * (DIAMETER + THICKNESS * i * 2) ** 3 / 6;
+  currentDiameter = DIAMETER + 2 * i * THICKNESS;
+  currentVolume = Math.PI * currentDiameter ** 3 / 6;
   commonVolume += currentVolume;
 }
 
