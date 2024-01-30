@@ -10,7 +10,7 @@ let currentVolume = 0;
 volumeOfSmallestBall = (Math.PI * DIAMETER ** 3) / 6;
 
 for (let i = 1; i <= COUNT_OF_BALLS; i++) {
-  currentVolume = Math.PI * (DIAMETER + THICKNESS) ** 3 / 6;
+  currentVolume = Math.PI * (DIAMETER + THICKNESS * i * 2) ** 3 / 6;
   commonVolume += currentVolume;
 }
 
