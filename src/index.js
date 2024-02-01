@@ -11,4 +11,4 @@ for (let i = 1; i <= COUNT_OF_BALLS; i++) {
   commonVolume += currentVolume;
 }
 
-console.log(`The volume of ${COUNT_OF_BALLS} ball(s) with thickness is ${commonVolume} meters^3`)
+console.log(`The total internal volume of ${COUNT_OF_BALLS} ball(s) is ${commonVolume} meters^3`)
